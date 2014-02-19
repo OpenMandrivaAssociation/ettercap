@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(libpcre)
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(openssl)
+BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(zlib)
 %rename ettercap-ng
 
