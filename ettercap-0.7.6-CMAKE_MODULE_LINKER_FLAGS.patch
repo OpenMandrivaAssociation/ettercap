@@ -1,0 +1,10 @@
+--- ettercap-0.8.0/CMakeLists.txt~	2013-09-11 20:18:45.000000000 +0000
++++ ettercap-0.8.0/CMakeLists.txt	2013-10-05 22:01:17.604872521 +0000
+@@ -117,7 +117,6 @@
+ else(OS_DARWIN)
+ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-export-dynamic" CACHE STRING "" FORCE)
+ set(CMAKE_EXE_LINKER_FLAGS_DEBUG "-Wl,-export-dynamic -pg" CACHE STRING "" FORCE)
+-set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-export-dynamic" CACHE STRING "" FORCE)
+ endif(OS_DARWIN)
+ 
+ if(ENABLE_LUA)
