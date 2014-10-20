@@ -1,12 +1,11 @@
 Summary:	Ncurses/Gtk2 based sniffer/interceptor utility
 Name:		ettercap
-Version:	0.8.0
+Version:	0.8.1
 Release:	1
 License:	GPLv2+
 Group:		Networking/Other
 Url:		http://ettercap.github.io/ettercap/
-Source:		https://github.com/Ettercap/ettercap/archive/v%{version}.tar.gz
-Patch0:		ettercap-0.7.6-CMAKE_MODULE_LINKER_FLAGS.patch
+Source0:	https://github.com/Ettercap/ettercap/archive/v%{version}.tar.gz
 BuildRequires:	bison
 BuildRequires:	cmake
 BuildRequires:	flex
@@ -50,15 +49,14 @@ and host analysis.
 
 %prep
 %setup -q
-%patch0 -p1
+%apply_patches
 
 %build
 %cmake \
 	-DENABLE_IPV6=yes \
+	-DENABLE_SSL=ON \
 	-DCMAKE_BUILD_TYPE=Release
 %make
 
 %install
 %makeinstall_std -C build
-
-
