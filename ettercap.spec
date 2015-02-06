@@ -1,7 +1,7 @@
 Summary:	Ncurses/Gtk2 based sniffer/interceptor utility
 Name:		ettercap
 Version:	0.8.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Networking/Other
 Url:		http://ettercap.github.io/ettercap/
