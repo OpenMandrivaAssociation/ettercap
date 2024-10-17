@@ -4,7 +4,7 @@ Version:	0.8.1
 Release:	2
 License:	GPLv2+
 Group:		Networking/Other
-Url:		http://ettercap.github.io/ettercap/
+Url:		https://ettercap.github.io/ettercap/
 Source0:	https://github.com/Ettercap/ettercap/archive/v%{version}.tar.gz
 BuildRequires:	bison
 BuildRequires:	cmake
